@@ -1,7 +1,7 @@
 from aiogram import Bot,Dispatcher,executor,types
 import requests
 import json
-token='1983534574:AAEX7aEsJZSSwWxEAgitKmtwEouEgGQy8sw'
+token='Sizning API tokeningiz'
 bot=Bot(token=token)
 dp=Dispatcher(bot)
 
@@ -13,7 +13,7 @@ async def start(message:types.Message):
 @dp.message_handler(content_types=['text'])
 async def asosiy(message:types.Message):
     text=message.text
-    key='e52a3986215cb1ffc4e71e1242a3939365ffd'
+    key='Cutly API key'
     import requests
     link=text
     url='http://cutt.ly/api/api.php?key={}&short={}'.format(key,text)
